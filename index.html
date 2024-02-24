@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faker - Credit Card Number Genrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <div class="box">
+        <h1>Fake Credit Card Numbers</h1>
+        <div class="error">
+            <p>There is an error.Try after some time.</p>
+        </div>
+        <div class="card">
+            <h2 class="bank-name"></h2>
+            <img src="./images/chip.png">
+            <p class="card-number"></p>
+            <div class="last-info">
+                <p class="owner"></p>
+                <p class="valid-date"></p>
+            </div>
+        </div>
+        <button>Genrate</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

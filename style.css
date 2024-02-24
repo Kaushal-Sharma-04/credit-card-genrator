@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 500px;
+  width: 450px;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  padding: 2px 12px;
+  font-size: 1.75rem;
+  color: #1c099f;
+}
+
+button {
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(144, 6, 152);
+}
+
+.card {
+  width: 350px;
+  background: #011c3e;
+  height: 180px;
+  border-radius: 5px;
+  display: none;
+}
+
+.card .bank-name {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  padding: 5px 0px 0px 15px;
+}
+
+.card img {
+  width: 65px;
+  padding: 00px 15px;
+}
+
+.card .card-number {
+  margin: 0;
+  color: #fff;
+  padding: 0px 35px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card .last-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card .last-info .owner,
+.valid-date {
+  margin: 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.error{
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .box{
+    width: 85vw;
+  }
+
+  .box h1{
+    text-align: center;
+  }
+
+  .card{
+    width: 75vw;
+  }
+
+  .error{
+    text-align: center;
+  }
+}
